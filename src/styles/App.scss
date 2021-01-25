@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  overflow: hidden;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 58.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 142rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 1610px) {
+  html {
+    font-size: 50.5%;
+  }
+}
+
+@media (max-width: 1360px) {
+  html {
+    font-size: 45.5%;
+  }
+}
+
+@import "./navigation";
+@import "./header";
+@import "./about";
+@import "./category";
+@import "./proccess";
+@import "./expert";
+@import "./carusel";
+@import "./pricing";
+@import "./galery";
+@import "./contact";
+@import "./footer";

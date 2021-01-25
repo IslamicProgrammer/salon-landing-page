@@ -1,0 +1,135 @@
+.category {
+  height: 62rem;
+  display: flex;
+
+  .left {
+    width: 50%;
+    height: 100%;
+    flex: 1;
+    background: #8f0366;
+    position: relative;
+
+    .shape-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 23.3rem;
+      height: 35rem;
+      transform: translate(-50%, -50%);
+      opacity: 0.4;
+    }
+  }
+
+  .right {
+    width: 50%;
+    height: 100%;
+    flex: 1;
+    background: url("../assets/category-bg.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .row {
+      margin: 2rem 0;
+      z-index: 4;
+      width: 100%;
+      padding: 1rem 4rem;
+      margin: 1rem 0;
+      display: flex;
+
+      .hidden {
+        display: none;
+      }
+
+      .col {
+        flex: 1;
+        text-align: center;
+        padding: 3rem;
+
+        img {
+          margin: 1rem 0;
+        }
+
+        h4 {
+          margin: 1rem 0;
+          font-size: 2rem;
+          line-height: 2.4rem;
+          color: #fff;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+        }
+
+        p {
+          color: #fff;
+          font-weight: 500;
+          size: 1.7rem;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .category {
+    .left {
+      .row {
+        .col {
+          h4 {
+            font-size: 2rem !important;
+          }
+
+          img {
+            width: 7rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .category {
+    .left {
+      .row {
+        .hidden {
+          display: block;
+        }
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .category {
+    margin: 2rem;
+    height: auto;
+    padding: 3rem 0;
+    .left {
+      .shape-bg {
+        display: none;
+      }
+      .row {
+        display: flex;
+        flex-direction: column;
+        .col {
+          border-bottom: 2px solid #3a0129;
+        }
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+}

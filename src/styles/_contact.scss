@@ -1,0 +1,259 @@
+.contact {
+  width: 100%;
+  min-height: 96rem;
+  height: 96rem;
+  display: flex;
+  overflow: hidden;
+  .frame {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.08;
+  }
+
+  .left {
+    width: 50%;
+    z-index: 50;
+    height: 100%;
+    iframe {
+      height: 100%;
+      width: 100%;
+      z-index: 100;
+    }
+  }
+
+  .right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #f4e6f0;
+    padding: 5rem;
+
+    h2 {
+      font-size: 5.5rem;
+      font-weight: 500;
+      padding: 3rem 0 2rem 0;
+    }
+
+    span {
+      width: 12rem;
+      height: 4px;
+      background: #8f0365;
+      display: block;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      font-size: 2rem;
+      padding: 3rem 0;
+    }
+
+    form {
+      padding: 2rem 0;
+
+      .input {
+        margin: 2rem 0;
+        input {
+          height: 6rem;
+          padding: 1rem 3rem;
+          font-size: 1.5rem;
+          width: 70%;
+          border: 1px solid #505050;
+          box-sizing: border-box;
+          border-radius: 35px;
+          background: transparent;
+          color: #5b0242;
+
+          &:focus {
+            outline: none;
+            border: 2px solid #5b0242;
+          }
+        }
+
+        button {
+          width: 19rem;
+          height: 5.5rem;
+          border-radius: 35px;
+          border: 5px solid #5b0242;
+          color: #5b0242;
+          font-weight: bold;
+          font-size: 2rem;
+          transition: all 0.5s ease;
+          background: transparent;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+            cursor: pointer;
+            background: transparent;
+          }
+
+          &:hover {
+            background: #5b0242;
+            color: #fff;
+          }
+        }
+
+        textarea {
+          padding: 1rem 3rem;
+          font-size: 2rem;
+          min-width: 70%;
+          max-width: 70%;
+          border: 1px solid #505050;
+          box-sizing: border-box;
+          border-radius: 35px;
+          background: transparent;
+          min-height: 25rem;
+          max-height: 25rem;
+          color: #5b0242;
+
+          &:focus {
+            outline: none;
+            border: 2px solid #5b0242;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .right {
+      h2 {
+        font-size: 4.5rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        padding: 2rem 0;
+      }
+
+      form {
+        .input {
+          input {
+            width: 90%;
+          }
+
+          button {
+            width: 22rem;
+          }
+
+          textarea {
+            min-width: 90%;
+            max-width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .contact {
+    .left {
+      min-height: 100%;
+      iframe {
+        min-height: 100%;
+      }
+    }
+
+    .right {
+      h2 {
+        font-size: 4.5rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        padding: 2rem 0;
+      }
+
+      form {
+        padding: 2rem 0;
+
+        .input {
+          button {
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    height: 200rem;
+    display: flex;
+    flex-direction: column-reverse;
+    .left {
+      min-height: 50% !important;
+      height: 50%;
+      width: 100%;
+      iframe {
+        min-height: 100% !important;
+      }
+    }
+
+    .right {
+      height: 50% !important;
+      width: 100%;
+      h2 {
+        font-size: 4.5rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        padding: 2rem 0;
+      }
+
+      form {
+        padding: 2rem 0;
+
+        .input {
+          button {
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500pz) {
+  .contact {
+    height: 190rem;
+
+    .right {
+      h2 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        padding: 1.8rem 0;
+      }
+
+      form {
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .input {
+          input,
+          textarea {
+            width: 100% !important;
+          }
+          button {
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}

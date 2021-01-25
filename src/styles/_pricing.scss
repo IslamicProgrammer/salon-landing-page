@@ -1,0 +1,246 @@
+.pricing {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(143, 3, 101, 0.11);
+  position: relative;
+  overflow: hidden;
+
+  .big-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    z-index: -10;
+    opacity: 0.1;
+  }
+
+  .frame1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+
+  .frame2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .top {
+      text-align: center;
+      h1 {
+        margin: 3rem 0;
+        padding-bottom: 4rem;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 2rem;
+        margin-bottom: 10rem;
+        color: #5f5f5f;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding-bottom: 5rem;
+
+      .left {
+        width: 40%;
+        margin-right: 2rem;
+      }
+
+      .right {
+        width: 40%;
+        margin-left: 2rem;
+      }
+
+      .price {
+        padding: 2rem 3rem;
+        margin: 0 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #00000033;
+
+        h2 {
+          font-size: 3rem;
+          font-weight: 600;
+          padding: 1rem 0;
+          letter-spacing: 1px;
+        }
+
+        h4 {
+          font-size: 2rem;
+          font-weight: 500;
+          color: #9b9b9b;
+        }
+
+        p {
+          font-size: 3rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .pricing {
+    .container {
+      .top {
+        h1 {
+          margin: 2rem 0;
+          padding-bottom: 4rem;
+          font-size: 4.5rem;
+          letter-spacing: 3px;
+        }
+      }
+
+      .bottom {
+        .left {
+          margin: 0 2rem;
+        }
+        .price {
+          padding: 2rem 3rem;
+          margin: 0 2rem;
+
+          h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            padding: 0.5rem 0;
+            letter-spacing: 1px;
+          }
+
+          h4 {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+
+          p {
+            font-size: 2rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricing {
+    .frame1,
+    .frame2 {
+      display: none;
+    }
+
+    .container {
+      .top {
+        h1 {
+          margin: 2rem 0;
+          padding-bottom: 4rem;
+          font-size: 4.5rem;
+          letter-spacing: 3px;
+        }
+      }
+
+      .bottom {
+        .left {
+          margin: 0 2rem;
+          width: 100%;
+        }
+        .right {
+          display: none;
+        }
+        .price {
+          padding: 2rem 3rem;
+          margin: 0 2rem;
+
+          h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            padding: 0.5rem 0;
+            letter-spacing: 1px;
+          }
+
+          h4 {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+
+          p {
+            font-size: 2rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pricing {
+    .container {
+      width: 100%;
+      padding: 0;
+      .top {
+        padding: 0 1.5rem;
+        h1 {
+          margin: 1rem 0;
+          padding-bottom: 4rem;
+          font-size: 3.5rem;
+          letter-spacing: 3px;
+        }
+
+        p {
+          font-smooth: 1.8rem;
+        }
+      }
+
+      .bottom {
+        width: 100%;
+        .left {
+          margin: 0;
+          width: 100%;
+        }
+        .right {
+          display: none;
+        }
+        .price {
+          padding: 2rem 0rem;
+          margin: 1rem 1rem;
+
+          h2 {
+            font-size: 2.3rem;
+          }
+
+          h4 {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+
+          p {
+            font-size: 2rem;
+            font-weight: 300;
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,383 @@
+.top-nav {
+  width: 100%;
+  height: 6.1rem;
+  background: #8f0365;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  .fa-times {
+    display: none;
+  }
+
+  .fa-times {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 3rem;
+    color: #dbdbdb;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .first-description {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%;
+
+      h4 {
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: #ffffff;
+        margin: 0 3rem;
+
+        span {
+          color: #dbdbdb;
+        }
+      }
+    }
+
+    .last-description {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%;
+
+      .lang {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2rem;
+
+        h4 {
+          font-weight: 600;
+          margin: 0 1rem;
+
+          a {
+            font-size: 2.5rem;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+
+        li {
+          margin: 0 1rem;
+
+          a {
+            img {
+              width: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-nav {
+  width: 100%;
+  height: 17.7rem;
+  background: #ffdcf5;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  .fa-times {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .list-group {
+      width: 100%;
+      height: 100%;
+      display: none;
+      position: relative;
+
+      i {
+        display: block;
+        font-size: 3.5rem;
+        color: #000;
+        cursor: pointer;
+      }
+
+      .logo-link {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 12rem;
+        }
+      }
+    }
+    .lists {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .logo {
+        width: 20rem;
+      }
+
+      li {
+        padding: 2rem 0;
+        padding-bottom: 1rem;
+        position: relative;
+
+        &:hover::after {
+          width: 100%;
+        }
+
+        &::after {
+          transition: all 0.5s ease;
+
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: 0 auto;
+          width: 0%;
+          height: 4px;
+          background: #8f0365;
+        }
+
+        a {
+          font-size: 3.5rem;
+          font-weight: 600;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .top-nav {
+    .container {
+      .first-description {
+        h4 {
+          font-size: 1.5rem;
+          margin: 0 1rem;
+        }
+      }
+
+      .last-description {
+        .lang {
+          h4 {
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      .main-nav {
+        .lists {
+          li {
+            a {
+              font-size: 3rem;
+            }
+          }
+
+          .logo {
+            width: 18rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 910px) {
+  .top-nav {
+    padding: 0 3rem;
+    .container {
+      .first-description {
+        justify-content: space-between;
+        h4 {
+          font-size: 1.3rem;
+          margin: 0 0.5rem;
+        }
+      }
+
+      .last-description {
+        padding-right: 3rem;
+        justify-content: flex-end;
+
+        .lang {
+          display: none;
+        }
+
+        .social {
+          .hidden {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    height: auto;
+
+    .container {
+      .lists {
+        li {
+          a {
+            font-size: 2.5rem;
+          }
+
+          .logo-link {
+            .logo {
+              width: 14rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 500px) {
+  .top-nav {
+    transition: all 0.5s ease;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 9000;
+    .fa-times {
+      display: block;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 30%;
+
+      .first-description {
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+
+        h4 {
+          text-align: center !important;
+          font-size: 3rem !important;
+          margin: 2rem 0.5rem !important;
+        }
+      }
+
+      .last-description {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .lang {
+          display: flex;
+          color: #fff;
+          margin: 2rem;
+
+          h4 {
+            a {
+              font-size: 3rem;
+            }
+          }
+        }
+
+        .social {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          li {
+            a {
+              img {
+                width: 3rem;
+              }
+            }
+          }
+
+          .hidden {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    .fa-times {
+      display: block;
+    }
+    .container {
+      .list-group {
+        display: block;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .lists {
+        transition: all 0.5s ease;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        background: #8f0365;
+        z-index: 4000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30rem 0;
+        li {
+          &::after {
+            background-color: #dbdbdb;
+          }
+        }
+
+        .exit {
+          position: absolute;
+          font-size: 4rem;
+          color: #dbdbdb;
+          top: 3rem;
+          right: 3rem;
+          cursor: pointer;
+        }
+
+        li {
+          a {
+            font-size: 3rem;
+            color: #dbdbdb;
+          }
+        }
+      }
+
+      .logo-item {
+        display: none;
+      }
+    }
+  }
+}

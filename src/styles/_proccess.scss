@@ -1,0 +1,258 @@
+.proccess {
+  height: 83.4rem;
+  width: 100%;
+  background: #e4e4e44d;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 4rem 0;
+
+    .left {
+      margin-right: 4rem;
+      width: 50%;
+
+      img {
+        width: 70rem;
+        box-shadow: rgba(196, 196, 196, 0.555) 0px 19px 38px,
+          rgba(196, 196, 196, 0.521) 0px 15px 3rem;
+      }
+    }
+
+    .right {
+      width: 50%;
+      min-height: 80%;
+      margin-left: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .typo {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+          font-weight: 700;
+          font-size: 5.5rem;
+          margin-bottom: 3rem;
+          letter-spacing: 2px;
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          color: #3d3a3a;
+        }
+      }
+    }
+  }
+
+  .big-logo,
+  .mobile-logo {
+    position: absolute;
+    width: 71.5rem !important;
+    right: -10%;
+    bottom: -10%;
+    z-index: -1;
+    opacity: 10%;
+  }
+
+  .mobile-logo {
+    display: none;
+    width: 31rem;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .proccess {
+    .container {
+      justify-content: space-between;
+      width: 90%;
+      .left {
+        margin-right: 2rem;
+        img {
+          width: 55rem;
+        }
+      }
+
+      .right {
+        margin-left: 2rem;
+        .typo {
+          h3 {
+            font-size: 4rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .proccess {
+    height: auto;
+    padding: 4rem 0;
+    .container {
+      justify-content: space-between;
+      width: 100%;
+      .left {
+        margin-right: 2rem;
+        img {
+          width: 45rem;
+          margin-left: 2rem;
+        }
+      }
+
+      .right {
+        margin-left: 2rem;
+        padding-right: 2rem;
+        justify-content: center;
+
+        .typo {
+          h3 {
+            font-size: 4rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .proccess {
+    height: auto;
+
+    .big-logo {
+      display: none;
+    }
+
+    .mobile-logo {
+      display: block;
+    }
+    .container {
+      justify-content: space-between;
+      width: 100%;
+      .left {
+        img {
+          width: 40rem;
+        }
+      }
+
+      .right {
+        justify-content: center;
+
+        .typo {
+          h3 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .proccess {
+    height: auto;
+
+    .container {
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      .left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0;
+        img {
+          width: 60rem;
+          margin: 0;
+        }
+      }
+
+      .right {
+        justify-content: center;
+        width: 80%;
+
+        .typo {
+          h3 {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .proccess {
+    height: auto;
+    padding: 0;
+
+    .mobilo-logo {
+      width: 40rem !important;
+    }
+
+    .container {
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 0;
+
+      width: 100%;
+      .left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 3rem 0;
+        img {
+          width: 100%;
+          margin: 0;
+        }
+      }
+
+      .right {
+        justify-content: center;
+        width: 80%;
+        padding: 4rem 0;
+
+        .typo {
+          h3 {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
