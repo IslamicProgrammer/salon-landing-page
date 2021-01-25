@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // logo
 import logo from "../../assets/logo.png";
 import TopNav from "./TopNav";
