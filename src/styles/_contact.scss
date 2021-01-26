@@ -53,9 +53,26 @@
 
       .input {
         margin: 2rem 0;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 2%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          width: 2.5rem;
+        }
+
+        .type {
+          top: 9%;
+          left: 1rem;
+        }
+
         input {
           height: 6rem;
           padding: 1rem 3rem;
+          padding-left: 6rem;
           font-size: 1.5rem;
           width: 70%;
           border: 1px solid #505050;
@@ -96,6 +113,7 @@
 
         textarea {
           padding: 1rem 3rem;
+          padding-left: 6rem;
           font-size: 2rem;
           min-width: 70%;
           max-width: 70%;
